@@ -43,6 +43,7 @@ body {
   line-height: 1.65;
   font-size: 16px;
   transition: background 220ms ease, color 220ms ease;
+  position: relative;
 }
 
 body::before {
@@ -76,7 +77,7 @@ a:hover {
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 24px 0;
 }
 
 .section {
@@ -85,7 +86,7 @@ main {
 }
 
 .hero {
-  padding-top: 56px;
+  padding-top: 84px;
 }
 
 .hero-layout {
@@ -269,6 +270,13 @@ p {
     border-color 160ms ease;
 }
 
+.theme-toggle-corner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
 .theme-toggle:hover {
   transform: translateY(-1px);
   border-color: rgba(29, 78, 216, 0.28);
@@ -373,7 +381,7 @@ p {
   }
 
   .hero {
-    padding-top: 42px;
+    padding-top: 88px;
   }
 
   .hero-layout {
@@ -414,8 +422,12 @@ p {
   }
 
   .theme-toggle {
-    width: 100%;
-    justify-content: center;
     min-height: 52px;
+  }
+
+  .theme-toggle-corner {
+    top: 14px;
+    right: 14px;
+    padding: 0 14px 0 12px;
   }
 }
