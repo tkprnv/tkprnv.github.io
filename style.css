@@ -122,39 +122,85 @@ p {
   margin-top: 26px;
 }
 
+.link-bar {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid rgba(29, 78, 216, 0.14);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 12px 28px rgba(29, 78, 216, 0.1);
+}
+
 .icon-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  width: 56px;
+  height: 54px;
+  border-radius: 0;
+  border: 0;
+  border-right: 1px solid rgba(29, 78, 216, 0.12);
+  background: transparent;
   color: var(--accent);
-  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.08);
-  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease,
-    background 160ms ease, color 160ms ease;
+  transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.icon-button:last-child {
+  border-right: 0;
 }
 
 .icon-button:hover {
   text-decoration: none;
   color: var(--accent-dark);
-  border-color: rgba(29, 78, 216, 0.35);
-  background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
-  box-shadow: 0 12px 24px rgba(29, 78, 216, 0.14);
-  transform: translateY(-2px);
+  background: rgba(29, 78, 216, 0.08);
 }
 
 .icon-button:focus-visible {
   outline: 3px solid rgba(29, 78, 216, 0.2);
-  outline-offset: 3px;
+  outline-offset: -3px;
 }
 
-.icon-button svg {
+.icon-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 22px;
   height: 22px;
+}
+
+.icon-mark svg {
+  width: 100%;
+  height: 100%;
   display: block;
+  overflow: visible;
+}
+
+.cv-icon .icon-mark {
+  width: 20px;
+  height: 20px;
+}
+
+.scholar-icon .icon-mark {
+  width: 21px;
+  height: 21px;
+  transform: translateY(1px);
+}
+
+.github-icon .icon-mark {
+  width: 21px;
+  height: 21px;
+}
+
+.linkedin-icon .icon-mark {
+  width: 20px;
+  height: 20px;
+}
+
+.email-icon .icon-mark {
+  width: 21px;
+  height: 21px;
 }
 
 .sr-only {
@@ -243,5 +289,15 @@ p {
 
   .subtitle {
     font-size: 18px;
+  }
+
+  .link-bar {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .icon-button {
+    width: 54px;
+    height: 52px;
   }
 }
