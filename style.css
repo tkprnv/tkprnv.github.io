@@ -1,15 +1,15 @@
 :root {
-  --bg: #f7f3ee;
+  --bg: #faf3ea;
   --bg-elevated: rgba(255, 252, 247, 0.84);
   --text: #2c2723;
   --muted: #756b63;
   --border: rgba(126, 99, 78, 0.2);
-  --accent: #a8583a;
-  --accent-dark: #82422d;
+  --accent: #b45f3d;
+  --accent-dark: #873e2a;
   --card-bg: rgba(255, 252, 247, 0.78);
   --shadow-soft: 0 22px 60px rgba(68, 47, 34, 0.09);
-  --shadow-card: 0 14px 34px rgba(168, 88, 58, 0.1);
-  --surface-highlight: linear-gradient(180deg, rgba(255, 253, 249, 0.96) 0%, rgba(250, 241, 232, 0.9) 100%);
+  --shadow-card: 0 14px 34px rgba(180, 95, 61, 0.13);
+  --surface-highlight: linear-gradient(180deg, rgba(255, 253, 249, 0.98) 0%, rgba(249, 232, 216, 0.94) 100%);
   --max-width: 900px;
 }
 
@@ -19,12 +19,12 @@
   --text: #f6ede6;
   --muted: #cbb8ab;
   --border: rgba(218, 169, 140, 0.2);
-  --accent: #e7a27d;
-  --accent-dark: #ffd0b6;
+  --accent: #f0a57e;
+  --accent-dark: #ffd1b8;
   --card-bg: rgba(38, 27, 22, 0.84);
   --shadow-soft: 0 24px 70px rgba(0, 0, 0, 0.36);
   --shadow-card: 0 18px 36px rgba(0, 0, 0, 0.22);
-  --surface-highlight: linear-gradient(180deg, rgba(52, 35, 28, 0.96) 0%, rgba(30, 22, 18, 0.94) 100%);
+  --surface-highlight: linear-gradient(180deg, rgba(58, 37, 28, 0.98) 0%, rgba(34, 23, 18, 0.96) 100%);
 }
 
 * {
@@ -62,7 +62,7 @@ body::before {
   background:
     radial-gradient(circle at top left, rgba(177, 91, 57, 0.24), transparent 32%),
     radial-gradient(circle at top right, rgba(132, 78, 53, 0.28), transparent 30%),
-    linear-gradient(180deg, rgba(7, 12, 22, 0.18), transparent 35%);
+    linear-gradient(180deg, rgba(26, 15, 10, 0.22), transparent 35%);
 }
 
 a {
