@@ -250,7 +250,7 @@
       var storedTheme = localStorage.getItem("theme");
       var initialTheme = storedTheme === "dark" || storedTheme === "light"
         ? storedTheme
-        : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        : "light";
 
       applyTheme(initialTheme);
 
