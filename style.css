@@ -168,11 +168,12 @@ p {
   flex-wrap: nowrap;
   gap: 0;
   overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: var(--surface-highlight);
-  box-shadow: var(--shadow-card);
-  backdrop-filter: blur(14px);
+  border-top: 1px solid var(--border);
+  border-right: 0;
+  border-bottom: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0;
+  background: transparent;
 }
 
 .icon-button {
