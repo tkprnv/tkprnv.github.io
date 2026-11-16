@@ -93,7 +93,7 @@ main {
 
 .profile-image-wrapper {
   width: 220px;
-  height: 280px;
+  height: 396px;
   border-radius: 0;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -105,7 +105,7 @@ main {
 .profile-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
 }
@@ -383,7 +383,7 @@ p {
 
   .profile-image-wrapper {
     width: 170px;
-    height: 220px;
+    height: 306px;
   }
 
   h1 {
