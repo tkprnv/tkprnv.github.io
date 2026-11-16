@@ -333,7 +333,6 @@ p {
   margin-bottom: 6px;
 }
 
-.publication,
 .cv-item {
   padding: 22px;
   background: var(--card-bg);
@@ -344,8 +343,40 @@ p {
   backdrop-filter: blur(12px);
 }
 
+.publication {
+  position: relative;
+  padding: 0 0 26px 24px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--border);
+}
+
+.publication::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 26px;
+  left: 0;
+  width: 3px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.publication:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.publication:last-child::before {
+  bottom: 0;
+}
+
 .publication h3 {
   margin-top: 0;
+}
+
+.publication p {
+  margin-bottom: 8px;
 }
 
 .tags {
